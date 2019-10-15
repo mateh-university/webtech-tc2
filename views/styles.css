@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway'); 
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT'); 
+
+*{
+    margin: 0px;
+    padding: 0px; 
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+} 
+
+
+body{
+    background-color:#201E1D; 
+    min-height: 100%; 
+}
+
+footer{ 
+    min-height: 100%; 
+    background: rgb(80, 82, 83);
+    color: rgb(193, 196, 202);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+} 
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+nav a{
+    display: block;
+    background: rgb(36, 36, 36);
+    color: whitesmoke; 
+    padding: 20px;
+    max-height: 59px;
+    float: left;  
+}
+
+nav a:hover{ 
+    
+    background: rgb(68, 65, 65); 
+    color: white;   
+}
+
+.clear{
+    clear: both;
+}
+
+.left{
+    float: left;
+    background: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+.right{
+    float: right;
+}
+
+.section-left{
+    float: left;  
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.aside{
+    float:right;
+    width: 30%;
+    margin-bottom: 70px;
+} 
+
+.container{
+    width: 90%;
+    margin: 30px auto; 
+}
+
+section{
+    float: left;  
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+aside{
+    float:right;
+    width: 30%;
+    margin-bottom: 70px;
+}
+
+.logo{
+    background: transparent !important;
+    margin: 0px auto; 
+    font-size: 1.5em;
+}  
+
+.login{
+    margin: 10px; 
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: url("/public/imgs/login.png") ;
+    background-position: center center;
+} 
+
+.login img{ 
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.imglogo{
+    z-index: 1;
+    width: 250px; 
+    height: 150px; 
+    /* background: white; */
+    padding: 0px
+
+}
+.imglogo img{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid black;  
+
+    border-radius: 10%;  
+
+}
+
+.imglogo a{
+    margin: 0px;
+    background: transparent;
+    padding: 0px;
+}
+    
+
+.nav{
+    width: 50%;
+} 
+.titulo {
+    color:#c46b6b;
+    /* background-color: white;  */
+    font-family: inherit ;
+    display: block;
+    font-size:70px ;
+    /* text-align: center;  */
+    margin: 0 auto;
+    width: 100%;
+    z-index: 0;
+    
+} 
+
+a{
+    text-decoration: none;
+}
+.junior{
+    color:white;  
+    /* text-align: center; */
+    font-family: inherit ;
+    font-size:50px ;
+    margin: 30px 0;
+}
+
+tr{
+cursor:copy;
+}
+
+
+/*Stilos del slaider automatico*/
+
+.slider { 
+    width: 100%;
+    height: 500px;
+	margin: auto;
+    overflow: hidden; 
+    
+}
+
+.slider span{
+    font-variant: small-caps;
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-weight: 900;
+    font-size: 2em;
+    margin: 40px 60px;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+iframe{
+    margin-bottom: 50px;
+    border: 1px solid green;
+    width: 95%; 
+}
+
+/*Stilos de la tabla*/
+.equipos{ 
+    margin: 30px auto;
+    width:900px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+table{
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td{
+    padding: 20px;
+}
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px #0f362D;
+    color:rgb(108, 209, 176);
+}
+
+tr:nth-child(even){
+    background-color: rgb(65, 58, 58); 
+}
+tr:hover td{
+    background-color: #369681;
+}
+
+form input{
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 15px auto;
+    border: none; 
+    border-radius: 15px solid black;
+}
+
+.submit {
+    width: 100px;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #0f362D; 
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    box-shadow: 0 0 20px 1px white; 
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.card img{
+    width: 443px;
+    height: 344px;
+}
